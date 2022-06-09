@@ -9,15 +9,7 @@
     padding:0;
     margin:0;
   }
-  div{
-    border-right: 2px solid black;
-    width:150px;
 
-  }
-  a{
-    color:black;
-    text-decoration: none;
-  }
   h1{
     border-bottom: 2px solid black;
     font-size:50px;
@@ -25,9 +17,30 @@
     padding:20px;
     margin:0;
   }
+  #grid{
+    display:grid;
+    grid-template-columns:150px 1fr;
+  }
   h2{
     font-size:15px;
   }
+  ol{
+    border-right: 2px solid black;
+    width:150px;
+    padding:25px;
+    margin:0;
+  }
+  #explains{
+    padding-left:65px;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+  a{
+    color:black;
+    text-decoration: none;
+  }
+
+
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9135DXMEDZ"></script>
@@ -44,19 +57,26 @@
 
 <h1>Welcome to "<span style="color:red">BookLover</span>" Website!!</h1>
 
-<div>
-<h2><주요 목록></h2>
-<a href="index.html" title="메인 화면으로 이동합니다" style="color:red">"메인 화면"</a>
-<br>
-<a href="researchPage.html" title="도서 검색창 화면으로 이동합니다">"도서 리서치"</a>
-<br>
-<a href="recommandPage.html" title="도서추천 화면으로 이동합니다">"도서추천"</a>
+<div id="grid">
+<ol>
+  <h2 style=display:inline><주요 목록></h2>
+  <br>
+  <a href="index.html" title="메인 화면으로 이동합니다" style="color:red">1.메인 화면</a>
+  <br>
+  <a href="researchPage.html" title="도서 검색창 화면으로 이동합니다">2.도서 리서치</a>
+  <br>
+  <a href="recommandPage.html" title="도서추천 화면으로 이동합니다">3.도서추천</a>
+  <br>
+</ol>
+
+  <div id="explains">
+    <li>This website provide various information of book</li>
+    <li>you can research the book what you want to read</li>
+    <li>you can see book's preview, what is subject of specific book</li>
+    <li>you can go to link of Book Critique</li>
+    <li>please enjoy our website for free!</li>
+  </div>
 </div>
-  <li>This website provide various information of book</li>
-  <li>you can research the book what you want to read</li>
-  <li>you can see book's preview, what is subject of specific book</li>
-  <li>you can go to link of Book Critique</li>
-  <li>please enjoy our website for free!</li>
 <img src="book.jpg">
 
 <hr>
