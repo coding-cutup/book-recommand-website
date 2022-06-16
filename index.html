@@ -35,11 +35,23 @@
     padding-top:20px;
     padding-bottom:20px;
   }
-  a{
-    color:black;
-    text-decoration: none;
+  h3{
+    font-size:40px;
+    color: rgb(252, 165, 3);
   }
-
+  a:link{
+    color:red;
+  }
+  a:visited{
+    color:blue;
+  }
+  a:active{
+    color:green;
+  }
+  #guide3{
+    font-size:20px;
+    font-weight:bold;
+  }
 
   </style>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -61,7 +73,7 @@
 <ol>
   <h2 style=display:inline><주요 목록></h2>
   <br>
-  <a href="index.html" title="메인 화면으로 이동합니다" style="color:red">1.메인 화면</a>
+  <a href="index.html" title="메인 화면으로 이동합니다">1.메인 화면</a>
   <br>
   <a href="researchPage.html" title="도서 검색창 화면으로 이동합니다">2.도서 리서치</a>
   <br>
@@ -78,6 +90,25 @@
   </div>
 </div>
 <img src="book.jpg">
+
+<p>
+<h3>"BookLover" 이용가이드에 대하여</h3>
+<ul class="a" >
+  <li></li>
+  <li></li>
+  <li>아래에는 추가적으로 사용자의 웹사이트 사용에 관한 동영상이 있습니다.</li>
+<br>
+<div id="guide3">사용자의 이용 동영상</div>
+<br>
+<video src="토깽이 풀뜯어먹는 영상.MOV" width="500" height="400"
+controls autoplay>
+</video>
+
+  <li>추가로 피드백을 하길 원한다면 아래의 댓글기능을 이용해주시기 바랍니다.</li>
+<br>
+<a href="#Comment" >*댓글기능 이용하러 가기*</a>
+
+</p>
 
 <hr>
 
@@ -103,7 +134,9 @@
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </p>
 
+
 <!--Start of Tawk.to Script-->
+<p id="Comment">
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -115,6 +148,7 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
+</p>
 <!--End of Tawk.to Script-->
 
 </body>

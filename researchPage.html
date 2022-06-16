@@ -2,17 +2,27 @@
 <html>
 <head>
   <title>책검색 "북러버"</title>
+  <meta charset="utf-8">
   <style>
   body{
     background-color:AntiqueWhite;
     padding:0;
     margin:0;
   }
-   ol{
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+   #grid ol{
     border-right: 2px solid black;
     width:150px;
     padding:25px;
     margin:0;
+  }
+  #grid #researchBar{
+    padding-top:20px;
+    padding-left:65px;
+    padding-bottom:20px;
   }
   a {
     color: black;
@@ -42,7 +52,8 @@
 </head>
 <body>
   <h1>book research bar</h1>
-  <ol>
+<div id="grid">
+<ol>
   <h2 style=display:inline;><주요 목록></h2>
   <br>
   <a href="index.html" title="메인 화면으로 이동합니다" style="color:red">1.메인 화면</a>
@@ -52,6 +63,14 @@
   <a href="recommandPage.html" title="도서추천 화면으로 이동합니다">3.도서추천</a>
   <br>
 </ol>
+
+ <div id="researchBar">
+<a href="https://www.naver.com/" target="_blank">네이버 검색창</a><br>
+<a href="https://www.google.co.kr/" target="_blank">구글 검색창</a><br>
+ </div>
+
+</div>
+
 
 
 <hr>
