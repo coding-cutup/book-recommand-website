@@ -89,12 +89,19 @@
     <li>please enjoy our website for free!</li>
   </div>
 </div>
-<input type="button" value="day mode" onclick="
-document.querySelector('body').style.backgroundColor='AntiqueWhite';
-document.querySelector('body').style.color='black';">
-<input type="button" value="night mode" onclick="
+
+<input id="day_night" type="button" value="night mode" onclick="
+if (document.querySelector('#day_night').value==='night mode'){
 document.querySelector('body').style.backgroundColor='rgb(13, 25, 54)';
-document.querySelector('body').style.color='white';">
+document.querySelector('body').style.color='white';
+document.querySelector('#day_night').value='day mode';
+}
+else{
+  document.querySelector('body').style.backgroundColor='AntiqueWhite';
+  document.querySelector('body').style.color='black';
+  document.querySelector('#day_night').value='night mode';
+}
+">
 <br>
 <img src="book.jpg">
 

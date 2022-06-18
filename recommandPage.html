@@ -75,6 +75,21 @@ h2{
     <li><a href="recommandPage5.html">도서추천-자기계발으로 이동</a></li>
   </div>
 </div>
+
+<input id="day_night" type="button" value="night mode" onclick="
+if (document.querySelector('#day_night').value==='night mode'){
+  document.querySelector('body').style.backgroundColor='rgb(13, 25, 54)';
+  document.querySelector('body').style.color='white';
+  document.querySelector('#day_night').value='day mode';
+}
+else{
+  document.querySelector('body').style.backgroundColor='AntiqueWhite';
+  document.querySelector('body').style.color='black';
+  document.querySelector('#day_night').value='night mode';
+}">
+
+<br>
+
 <hr>
 
 <p>
