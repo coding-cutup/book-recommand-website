@@ -3,6 +3,35 @@
 <head>
   <title>책추천-소설 "북러버"</title>
   <meta charset="utf-8">
+  <script>
+      function nightDayHandler(self){
+      var target = document.querySelector('body');
+      if (document.querySelector('#day_night').value==='night mode'){
+        target.style.backgroundColor='rgb(0,0,0)';
+        target.style.color='white';
+        self.value='day mode';
+
+        var alist =document.querySelectorAll('a');
+        var i=0;
+        while(i<alist.length){
+          alist[i].style.color='powderblue';
+          i+=1;
+        }
+      }
+      else{
+        target.style.backgroundColor='AntiqueWhite';
+        target.style.color='black';
+        self.value='night mode';
+
+        var alist =document.querySelectorAll('a');
+        var i=0;
+        while(i<alist.length){
+          alist[i].style.color='blue';
+          i+=1;
+        }
+      }
+    }
+  </script>
   <link rel="stylesheet" href="style(recommandPage).css">
 
   <!-- Global site tag (gtag.js) - Google Analytics 구글 애널리틱스 태그 코드-->
@@ -41,30 +70,7 @@
 </div>
 
 <input id="day_night" type="button" value="night mode" onclick="
-if (document.querySelector('#day_night').value==='night mode'){
-  document.querySelector('body').style.backgroundColor='rgb(0,0,0)';
-  document.querySelector('body').style.color='white';
-  document.querySelector('#day_night').value='day mode';
-
-  var alist =document.querySelectorAll('a');
-  var i=0;
-  while(i<alist.length){
-    alist[i].style.color='powderblue';
-    i+=1;
-  }
-}
-else{
-  document.querySelector('body').style.backgroundColor='AntiqueWhite';
-  document.querySelector('body').style.color='black';
-  document.querySelector('#day_night').value='night mode';
-
-  var alist =document.querySelectorAll('a');
-  var i=0;
-  while(i<alist.length){
-    alist[i].style.color='blue';
-    i+=1;
-  }
-}">
+nightDayHandler(this)">
 
 <br>
 
