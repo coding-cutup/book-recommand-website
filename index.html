@@ -4,31 +4,35 @@
   <title> "북러버" 도서추천 웹사이트 </title>
   <meta charset="utf-8">
   <script>
-      function nightDayHandler(self){
-      var target = document.querySelector('body');
-      if (document.querySelector('#day_night').value==='night mode'){
-        target.style.backgroundColor='rgb(0,0,0)';
-        target.style.color='white';
-        self.value='day mode';
-
+      function setColorLink(color){
         var alist =document.querySelectorAll('a');
         var i=0;
         while(i<alist.length){
-          alist[i].style.color='powderblue';
+          alist[i].style.color = color;
           i+=1;
         }
       }
+      function bodySetColor(color){
+        document.querySelector('body').style.color=color;
+      }
+      function bodySetBackgroundColor(color){
+        document.querySelector('body').style.backgroundColor=color;
+      }
+      function nightDayHandler(self){
+      var target = document.querySelector('body');
+      if (document.querySelector('#day_night').value==='night mode'){
+        bodySetBackgroundColor('black');
+        bodySetColor('white');
+        self.value='day mode';
+
+        setColorLink('PowderBlue');
+      }
       else{
-        target.style.backgroundColor='AntiqueWhite';
-        target.style.color='black';
+        bodySetBackgroundColor('AntiqueWhite');
+        bodySetColor('black');
         self.value='night mode';
 
-        var alist =document.querySelectorAll('a');
-        var i=0;
-        while(i<alist.length){
-          alist[i].style.color='blue';
-          i+=1;
-        }
+        setColorLink('Blue');
       }
     }
   </script>
