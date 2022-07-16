@@ -37,6 +37,9 @@
     padding-top:20px;
     padding-bottom:20px;
   }
+  #Guide {
+    
+  }
   h3{
     font-size:40px;
     color: rgb(252, 165, 3);
@@ -49,6 +52,13 @@
   }
   a:active{
     color:green;
+  }
+  #logo {
+    border: 6px solid green;
+    border-radius: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   #guide3{
     font-size:20px;
@@ -95,9 +105,9 @@
 <input id="day_night" type="button" value="night mode" onclick="
 nightDayHandler(this)">
 <br>
-<img src="pictures/book.jpg">
+<img id="logo" src="pictures/book.jpg">
 
-<p>
+<div id="Guide">
 <h3>"BookLover" 이용가이드에 대하여</h3>
 <ul class="a" >
   <li></li>
@@ -114,7 +124,7 @@ controls autoplay>
 <br>
 <a href="#Comment" >*댓글기능 이용하러 가기*</a>
 
-</p>
+</div>
 
 <hr>
 

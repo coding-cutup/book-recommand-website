@@ -1,0 +1,34 @@
+/* 도서 설명부분의 style시트 */
+  .book {
+    margin-bottom : 40px;
+    margin-right : auto;
+    margin-left : auto;
+    padding : 50px;
+    background-color : #eee;
+    border-radius : 30px;
+    width : 800px;
+    box-shadow : 20px 20px 5px rgb(161, 166, 162);
+  }
+
+  .book .bookTitle {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .book .author {
+    display:block;
+    text-align: center;
+  }
+
+  .book .bookImage {
+    width: 300px;
+    height: 450px;
+    display: block;
+    margin-left : auto;
+    margin-right : auto;
+    box-shadow: 10px 10px 5px rgb(161, 166, 162);
+  }
+
+  .book .bookContent {
+      font-family: "Arial";
+  }
