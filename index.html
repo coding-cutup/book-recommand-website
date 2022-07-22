@@ -3,6 +3,7 @@
 <head>
   <title> "북러버" 도서추천 웹사이트 </title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style(주요목록).css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="colors.js"></script>
   <style>
@@ -19,6 +20,7 @@
     padding:20px;
     margin:0;
   }
+
   #grid{
     display:grid;
     grid-template-columns:150px 1fr;
@@ -38,21 +40,15 @@
     padding-bottom:20px;
   }
   #Guide {
-    
+
   }
   h3{
     font-size:40px;
     color: rgb(252, 165, 3);
   }
-  a:link{
-    color:red;
-  }
-  a:visited{
-    color:blue;
-  }
-  a:active{
-    color:green;
-  }
+
+
+
   #logo {
     border: 6px solid green;
     border-radius: 3px;
@@ -85,11 +81,11 @@
 <ol>
   <h2 style=display:inline><주요 목록></h2>
   <br>
-  <a href="index.html" title="메인 화면으로 이동합니다">1.메인 화면</a>
+  <button type="button"><a href="index.html" title="메인 화면으로 이동합니다">1.메인 화면</a></button>
   <br>
-  <a href="researchPage.html" title="도서 검색창 화면으로 이동합니다">2.도서 리서치</a>
+  <button type="button"><a href="researchPage.html" title="도서 검색창 화면으로 이동합니다">2.도서 리서치</a></button>
   <br>
-  <a href="recommandPage.html" title="도서추천 화면으로 이동합니다">3.도서추천</a>
+  <button type="button"><a href="recommandPage.html" title="도서추천 화면으로 이동합니다">3.도서추천</a></button>
   <br>
 </ol>
 
