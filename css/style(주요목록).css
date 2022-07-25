@@ -3,14 +3,42 @@ ol button {
   border-radius: 8px;
   background-color: rgb(42, 118, 184);
   margin: 3px;
-  width: 100px;
+  width: 135px;
   text-align: left;
+  transition-duration: 0.5s;
 }
 button:hover {
   box-shadow: 2px 2px 2px #7f8585;
+  background-color: #772fb5;
+  border: 3px solid rgb(26, 14, 36);
 }
 ol a {
   text-decoration: none;
-  color: white;
+  color: black;
+  font-size: 18px;
   /* color: black; */
+}
+#list button {
+  border: 2px solid rgb(13, 209, 173);
+  border-radius: 6px;
+  background-color: rgb(42, 118, 184);
+  margin: 2px;
+  width: 215px;
+  text-align: left;
+  transition-duration: 0.5s;
+}
+#list button:hover {
+  box-shadow: 2px 2px 2px #7f8585;
+  background-color: #772fb5;
+  border: 2px solid rgb(26, 14, 36);
+}
+#list a {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#day_night {
+  background-color: #f5e025;
+  border: 2px solid #2e2e2c;
+  border-radius: 8px;
 }

@@ -33,6 +33,6 @@ else{
   body.SetColor('black');
   self.value='night mode';
 
-  link.SetColor('Blue');
+  link.SetColor('black');
 }
 }
